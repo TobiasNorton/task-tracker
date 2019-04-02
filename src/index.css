@@ -18,10 +18,16 @@ code {
 }
 
 .list {
-  padding: 2rem;
+  padding: 2rem 2rem 1rem 2rem;
   background-color: hsl(185, 50%, 75%);
   margin: 1rem;
   width: 18rem;
+  border-radius: 8px;
+}
+
+.category {
+  font-size: 1.4rem;
+  margin: 0 0 1rem 0;
 }
 
 .list-item-container {

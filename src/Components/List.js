@@ -5,6 +5,7 @@ class List extends Component {
   render() {
     return (
       <div className="list">
+        <p className="category">Job Search</p>
         <ListItem />
         <ListItem />
         <ListItem />
