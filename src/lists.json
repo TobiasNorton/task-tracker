@@ -1,85 +1,45 @@
 [
-  [
-    {
-      "list-name": "Job Search"
-    },
-    {
-      "list-items": [
-        [
-          {
-            "task": "I'm going to do something."
-          },
-          {
-            "details": ["Yea that's cool", "Okay man let's have fun", "I love to code"]
-          }
-        ],
-        [
-          {
-            "task": "Need to do another thing."
-          },
-          {
-            "details": ["Hi, Mom!", "Detail about this thing", "I love to code"]
-          }
-        ],
-        [
-          {
-            "task": "Third thing I have to do."
-          },
-          {
-            "details": ["Yea that's cool", "Okay man let's have fun", "I love to code"]
-          }
-        ]
-      ]
-    }
-  ],
-  [
-    {
-      "list-name": "House Stuff"
-    },
-    {
-      "list-items": [
-        [
-          {
-            "task": "Clean up the yard"
-          },
-          {
-            "details": ["Put yard tools away", "Mow the lawn", "Weed the garden"]
-          }
-        ],
-        [
-          {
-            "task": "Clean up inside"
-          },
-          {
-            "details": ["Throw away old food items", "Wipe out fridge", "Dishes"]
-          }
-        ]
-      ]
-    }
-  ],
-  [
-    {
-      "list-name": "Car Stuff"
-    },
-    {
-      "list-items": [
-        [
-          {
-            "task": "Clean car"
-          },
-          {
-            "details": ["Car wash", "Vacuum interior", "Wipe down vinyl", "Wax"]
-          }
-        ],
-        [
-          {
-            "task": "Maintenance"
-          },
-          {
-            "details": ["New power steering pump", "Tires"]
-          }
-        ]
-      ]
-    }
-  ]
+  {
+    "list-name": "Job Search",
+    "list-items": [
+      {
+        "task": "I'm going to do something.",
+        "details": ["Yea that's cool", "Okay man let's have fun", "I love to code"]
+      },
+      {
+        "task": "Need to do another thing.",
+        "details": ["Hi, Mom!", "Detail about this thing", "I love to code"]
+      },
+      {
+        "task": "Third thing I have to do.",
+        "details": ["Yea that's cool", "Okay man let's have fun", "I love to code"]
+      }
+    ]
+  },
+  {
+    "list-name": "House Stuff",
+    "list-items": [
+      {
+        "task": "Clean up the yard",
+        "details": ["Put yard tools away", "Mow the lawn", "Weed the garden"]
+      },
+      {
+        "task": "Clean up inside",
+        "details": ["Throw away old food items", "Wipe out fridge", "Dishes"]
+      }
+    ]
+  },
+  {
+    "list-name": "Car Stuff",
+    "list-items": [
+      {
+        "task": "Clean car",
+        "details": ["Car wash", "Vacuum interior", "Wipe down vinyl", "Wax"]
+      },
+      {
+        "task": "Maintenance",
+        "details": ["New power steering pump", "Tires"]
+      }
+    ]
+  }
 ]
