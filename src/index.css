@@ -38,8 +38,8 @@ code {
   margin: 0;
 }
 
-.item-details {
+.item-detail {
   margin: 0;
-  padding-left: 1rem;
+  padding-left: 0.5rem;
   font-size: 0.7rem;
 }

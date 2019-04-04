@@ -54,22 +54,14 @@ class AllLists extends Component {
     }
   }
 
-  // getLists = () => {
-  //   return this.state.lists.map((list, index) => {
-  //     return (
-  //       <List key={index} listName={list.listName} list
-  //     )
-  //   })
-  // }
+  getLists = () => {
+    return this.state.lists.map((list, index) => {
+      return <List key={index} listName={list.listName} listItems={list.listItems} />
+    })
+  }
 
   render() {
-    return (
-      <div className="all-lists">
-        <List />
-        <List />
-        <List />
-      </div>
-    )
+    return <div className="all-lists">{this.getLists()}</div>
   }
 }
 
