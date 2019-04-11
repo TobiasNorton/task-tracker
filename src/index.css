@@ -11,15 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+.nav-bar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: hsl(185, 50%, 50%);
+}
+
 .all-lists {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: hsl(185, 50%, 75%);
+  height: 100vh;
 }
 
 .list {
-  padding: 2rem 2rem 1rem 2rem;
-  background-color: hsl(185, 50%, 75%);
+  padding: 1.5rem 2rem 1rem 2rem;
+  background-color: hsl(185, 50%, 90%);
   margin: 1rem;
   width: 18rem;
   border-radius: 8px;
@@ -42,4 +51,30 @@ code {
   margin: 0;
   padding-left: 0.5rem;
   font-size: 0.7rem;
+}
+
+.collapsed:hover {
+  cursor: pointer;
+}
+
+.show-less {
+  margin: 0;
+  padding-left: 0.5rem;
+  font-size: 0.7rem;
+  color: hsl(185, 50%, 50%);
+}
+
+.show-less:hover {
+  cursor: pointer;
+}
+
+.new-list {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: hsl(185, 50%, 90%);
+  margin: 1rem;
+  width: 18rem;
+  height: 2rem;
+  border-radius: 8px;
 }

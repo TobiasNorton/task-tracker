@@ -9,7 +9,6 @@ class List extends Component {
   }
 
   render() {
-    console.log(this.props)
     return (
       <div className="list">
         <p className="category">{this.props.listName}</p>

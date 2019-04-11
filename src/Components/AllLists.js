@@ -61,7 +61,19 @@ class AllLists extends Component {
   }
 
   render() {
-    return <div className="all-lists">{this.getLists()}</div>
+    return (
+      <>
+        <nav className="nav-bar">
+          <p>My Lists</p>
+          <p>New List</p>
+        </nav>
+        <div className="all-lists">
+          {this.getLists()}
+
+          <div className="new-list">Creat New List</div>
+        </div>
+      </>
+    )
   }
 }
 
