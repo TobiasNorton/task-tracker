@@ -5,7 +5,11 @@ class ListItem extends Component {
     super(props)
 
     this.state = {
-      detailsDropDown: false
+      task: this.props.task || this.state.userInput,
+      details: this.props.details,
+      userInput: '',
+      detailsDropDown: false,
+      isEditing: false
     }
   }
 
@@ -42,10 +46,49 @@ class ListItem extends Component {
     })
   }
 
+  listItem = () => {
+    if (this.state.isEditing === false) {
+      return (
+        <div className="list-item">
+          {this.props.task}
+          <p onClick={this.editListItem}>Edit</p>
+        </div>
+      )
+    } else {
+      return (
+        <form onSubmit={this.submit}>
+          <input type="text" defaultValue={this.props.task} onChange={this.getUserInput} />
+        </form>
+      )
+    }
+  }
+
+  submit = event => {
+    console.log('submitted')
+    this.setState({
+      task: this.state.userInput
+    })
+  }
+
+  getUserInput = event => {
+    this.setState(
+      {
+        userInput: event.target.value
+      },
+      () => console.log(this.state.task)
+    )
+  }
+
+  editListItem = () => {
+    this.setState({
+      isEditing: true
+    })
+  }
+
   render() {
     return (
       <div className="list-item-container">
-        <p className="list-item">{this.props.task}</p>
+        {this.listItem()}
         {this.getDetails()}
       </div>
     )

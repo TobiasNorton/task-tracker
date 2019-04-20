@@ -11,7 +11,7 @@ class List extends Component {
   render() {
     return (
       <div className="list">
-        <p className="category">{this.props.listName}</p>
+        <p className="name">{this.props.listName}</p>
         {this.getListItems()}
       </div>
     )

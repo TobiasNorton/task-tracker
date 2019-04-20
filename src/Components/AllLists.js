@@ -15,6 +15,22 @@ class AllLists extends Component {
               details: ["Yea that's cool", "Okay man let's have fun", 'I love to code']
             },
             {
+              task: "I'm going to do something.",
+              details: ["Yea that's cool", "Okay man let's have fun", 'I love to code']
+            },
+            {
+              task: "I'm going to do something.",
+              details: ["Yea that's cool", "Okay man let's have fun", 'I love to code']
+            },
+            {
+              task: "I'm going to do something.",
+              details: ["Yea that's cool", "Okay man let's have fun", 'I love to code']
+            },
+            {
+              task: "I'm going to do something.",
+              details: ["Yea that's cool", "Okay man let's have fun", 'I love to code']
+            },
+            {
               task: 'Need to do another thing.',
               details: ['Hi, Mom!', 'Detail about this thing', 'I love to code']
             },
@@ -64,14 +80,18 @@ class AllLists extends Component {
     return (
       <>
         <nav className="nav-bar">
+          <div>
+            <p>TaskTracker</p>
+          </div>
           <p>My Lists</p>
           <p>New List</p>
         </nav>
-        <div className="all-lists">
-          {this.getLists()}
-
-          <div className="new-list">Creat New List</div>
-        </div>
+        <section className="all-lists">
+          <div className="lists-container">
+            {this.getLists()}
+            <div className="new-list">Create New List</div>
+          </div>
+        </section>
       </>
     )
   }
