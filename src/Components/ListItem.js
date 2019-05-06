@@ -75,7 +75,7 @@ class ListItem extends Component {
       {
         userInput: event.target.value
       },
-      () => console.log(this.state.task)
+      () => console.log(this.state.userInput)
     )
   }
 
